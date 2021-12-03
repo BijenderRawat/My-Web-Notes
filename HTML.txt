@@ -1,0 +1,383 @@
+<meta> tag defines meta data about HTML document
+meta data is nothing but some information about HTML document
+all that meta information is for more responsive web pages
+
+eg when google searches something, it uses meta information to display relative content to our search
+
+
+<a href="https://www.google.com" target="_blank" alt="problem loading page">go to google</a>
+it has 4 values
+_self      (default)opens the link in same window
+_blank     opens the link in other window
+_parent    opens the link in parent frame
+_top       opens the link in full body of window
+
+(if we write href = "#", then on hovering over the link, we will get the path of html file in the bottom-left of browser, their will nothing happen on click
+over link)
+
+<abbr title="">----</abbr>
+<table>
+<tr>
+<td></td>
+</tr>
+</table>
+
+
+<span> tag defines a section in the document
+eg: <p><span></span></p> like this
+
+
+<header> tag defines header part of document or section
+
+<footer> tag defines the bottom part of any document or section
+It doesn't meant that it need to be places at bottom of web page, but it is used to give some details at the bottom of yout web page\
+like social media links, copyright etc
+
+<nav> tag can be defines as a way to group links together
+
+<main> tag defines the main content of documnet or section
+
+<section> just like main tag it also defines dection of document
+
+<article> tag is similar to section tag, but it is used to define content
+
+<aside> tag defines content aside from page content
+
+<dialog> tag defines a dialogue box
+	
+<data> tag adds a machine readable translation of given content
+
+<fieldset> tag is used to group similar elements together
+
+<legend> tag defines caption for form. It works with fieldset tag
+<form>
+<fieldset>
+<label>This is my info</label>
+<input></input>
+</fieldset>
+</form>
+
+<output> tag defines the result of calculation
+
+username <input type="text">
+password <input type="password">
+gender <input type="radio">
+</form>
+						there are many types of input in html
+						some of them are text(default), number, password, radio, submit, reset, color, date, email, url,  etc
+						examples of some types are
+						select color <input type="color"><br>
+						select date <input type="date"><br>
+						select number <input type="number" min=5 max=10 step=2><br>
+						enter email <input type="email"><br>
+						enter url <input type="url"><br> 
+						enter telephone number <input type="tel"><br>
+						search <input type="search"><br>
+						
+													there are some special characters in HTML 
+													some of them are shown here
+													&copy        for copyright symbol
+													&nbsp        for adding spaces
+													&lt          for less than
+													&gt          for greater than
+													&quot        for quotation
+													&apos        for appostrophe
+													&reg         for registered symbol
+													to add arrows 
+													&larr           left side
+													&rarr           right side
+													&uarr           upward side
+													&darr           downward side
+													&delta          adds delta sign 
+													&gamma          adds gamma sign
+													here are the examples of each special symbol
+													&copy; to RELIANCE<br>
+													bijender &nbsp; singh &nbsp; rawat<br>
+													username &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"/><br>
+													a &lt; b<br>
+													a &gt; b<br>
+													&quot;bijender singh rawat&quot;<br>
+													&apos;bijender&apos;
+					listing in HTML
+					there are 2 types of list 
+					1)ordered list            <ol>
+					2)unordered list          <ul>
+					there are many type of shapes for list
+					circle , square , disc , roman , alphabet , number
+			to apply these shapes
+            list-style-type property is used 			
+																		there are various types of writing format text
+																		em , strong , var , b , code , samp , kbd , tt , mark 
+																		mark tag is use to highlight a text
+																		strong and bold tags are used to bold the text
+																		em and var tags are same , they make the text font italic
+																		code , samp , tt , kbd tags are same																		
+							HTML DESCRIPTION LIST
+		description list is a list of terms , with a description of each term
+		<dl>  description list
+		<dt>  defines the term(names)
+		<dd>  describes each term
+	<dl>                        // description list tag
+	<dt>coffee</dt>             // description name
+	<dd>black hot drink</dd>    // describes the description name
+	<dt>milk</dt>
+	<dd>cold white drink</dd>
+	</dl>
+how the suggested words are shown in a list whenever we type a letter 
+this is done by the datalist tag
+eg 
+   <input list="name of list">
+   <datalist id="name of list">
+   <option value="suggested word">
+   <option value="suggested word">
+   <option value="suggested word">
+   </datalist>
+   but before giving the id of the datalist , input tag must be specified and the id of that input tag must be same 
+   and then the suggested words can be given in the option tag
+											
+											details and summary tags are used , when user wants to view our details on their own needed
+											syntax of using these tags is 
+											<details>
+											<summary>show my details</summary>
+											<p>bijender singh rawat</p>
+											<p>9971843234</p>
+											<p>bijenderrawat12414@gmail.com</p>
+											</details>
+anything written after summary tag will be shown when user clicks on a arrow
+
+to define an area inside an image , map and area tags are used 
+<map name="mymap">
+<area shape="" coords="" href=""> 
+</map> 
+<img usemap="#mymap" src="gujrat.jpg" alt="error">
+in a map tag name is always given 
+and that name is used in the image tag as its usemap attribute 
+
+<picture> tag is a container for multiple image resources
+it gives developer more flexibility on designing images
+
+figure and figcaption tags 
+figure tag represents a figure
+figcaption tag represents caption below the figure
+syntax is like
+<figure>
+<img>
+<figcaption>
+</figcaption>
+</figure>
+bijender singh rawat will float and move from right to left 
+pre tag
+by using pre tag we can write our content as it is on our screen
+but the disadvantage of this tag is we can not change the font style of the text
+template tag
+the content written inside this tag is hidden
+
+svg tag 
+scalable vector graphics
+by using svg tag we can create svg graphics in our HTML
+<svg width="" height="">           // width and height are needed to be set , setting width and height will create an area inside which we can                                                                           
+</svg>                               create graphics
+
+the graphics, we create using svg are always clean that means the image we create is complete either we zoom in or zoom outset
+pixels if image do not burst
+
+for eg , to create circle 
+<circle cx="" cy="" r="" fill="" stroke="" stroke-width="">
+here cx and cy are the coordinates of center
+r is the radius
+fill is used to color circle(internally)
+stroke is use to add border
+stroke-width is use to increase border width 
+here an example of creating three shapes in HTML using svg tag
+<svg width="200" height="200">
+  <circle cx="100" cy="100" r="50" fill="red" stroke="black" stroke-width="5" />
+  <text x="65" y="100">circle shape</text>
+</svg>
+<svg width="200" height="200">
+    <rect width="100" height="100" fill="red" stroke="green" stroke-width="5" />
+    <text x="4" y="50">rectangle shape</text>
+</svg>
+<svg width="200" height="200">
+    <line x1="20" y1="20" x2="100" y2="100" fill="red" stroke="green" stroke-width="5" />
+</svg>
+how to add a background image in HTML page
+<style>
+body {
+background-image: url(name of image file);
+}
+</style>
+but in this background image repeat itself
+to add no repeat feature
+backgroung-image: no-repeat;
+to repeat images only along x axis 
+background-image: repeat-x;
+similarly for along y axis
+to position our image , we can write
+background-position: left center;
+background-position: right center;
+background-position: center center;
+background-position: left left;
+background-position: right left;
+background-position: center left;
+background-position: left right;
+background-position: right right;
+background-position: center right;
+to fix the image at a position we can background attachment to fix the image
+background-attachment: fixed;
+								 
+						    border can have multiple styles like
+							border-style: solid; 
+							border-style: dotted;
+							border-style: dashed;
+							border-style: double;
+							border-style: groove;
+							border-style: ridge;
+							border-style: inset;
+							border-style: outset;
+							
+we can change the border width
+by using border-width: 
+the vaue can be thin, medium, thick 
+														
+			there are many text related formatting in CSS
+			for eg , <p>HTML and CSS</p>
+	text formatting on this p tag can be like
+	
+	text-transform: uppercase or lowercase;
+	                                           this is will make all the letters captial or smaller
+	text-transform: capitalize;
+	                                           this will make the first letter of each word , capitalize
+	text-decoration: underline , overline , line-through;
+											   this will make the words underlined , overline and line crossing it
+                                  ( s and strike tags are alternatives for line-through property )
+								  ( u is alternative for underline )
+	letter-spacing: 10px;
+											   this will make a gap of 10px between the letters
+    word-spacing: 10px;
+											   this will make a gap of 10px between the words
+	text-shadow: 3px 4px 5px black;
+											   use to give shadow effect
+											   3px is horizontal effect
+											   4px is vertical effect
+                                               5px is blur effect											   
+											   black is color of effect
+	text-align: left , right , center , justify;
+												justify will stretch each line so that every line has equal width like in newspaper or magazines
+	direction: rtl;
+	unicode-bidi: bidi-override;
+	                                        this will change the direction of letters from right to left
+	vertical-align: top , middle , bottom;
+	                                      top will make the text vertically top
+										  middle will make the text vertically middle 
+										  bottom will make the text vertically bottom
+	line-height: 1;
+                        this will give space between two lines of 1
+    
+                                                      counter in CSS
+if we want an automatic increment in value of a variable , then we use countring in our HTML
+this is done like this,
+body {
+counter-reset: section;                                    // it can be assumed that we have a counter variable in our HTML which has some garbage value
+}                                                             and by writing <counter-reset: section>, we reset the value of counter variable
+                                                           // it can also be considered that counter variable is representing section 
+h2::before {
+counter-increment: section;                                // whenever something will be written before h2 tag , the value of counter will increase 
+content: "section" counter(section)" : ";                  // in this line the content wriiten will be printed as it is
+}
+     
+	                                                  CSS column count
+it is used to align written text according to columns, by using this column count , we can align the text like in newspaper , magazines etc
+eg , 
+<div>---------------------------------------</div>
+<style>
+div {
+column-count: 3;                                        // complete text will be grouped in 3 columns
+column-gap: 10px;                                       // gap between columns will be of 10px
+column-rule: 1px solid green;
+</style>                                      
+                                           GRADIENT EFFECT IN CSS
+					 		there are two type of gradient effent in CSS
+							linear and radial effects
+				background-image: linear-gradient(pink , red);            // the color of background will fall from pink to red, linearlly
+				by default gradient effect is from top to bottom , to change it to right to left or vice versa
+				background-image: linear-gradient(to right , pink , green);             // to make effect from left to right
+				
+				                           2D transform methods
+				 these methods are used to move elements in 2D 			 
+				 eg: 
+				 transform: translate(100px,50px);                     // move the element 100px from right and 50 px from top
+				 transform: rotate(90deg);                             // rotate the element 90 degrees
+				 transform: scale(2,3);                                // increase the size of element 2 times the width and 3 times the height
+				 transform: skewX or skewY(10deg);
+				 
+				 
+to add an external CSS in HTML 
+we use link tag
+<link rel="stylesheet" type="text/css" href="---.css">
+
+HTML/CSS supports 140 colors
+https://www.w3schools.com/colors/colors_names.asp
+
+<html>
+<head>
+<style>
+.heading {font-family:impact,sans-serif;}
+.veryimportant {background-color: yellow;}
+.stuff {color: red;}
+.veryimportant.stuff {font-style: italic;}
+.veryimportant.stuff.example {text-decoration: underline;}
+</style>
+</head>
+<body>
+<h1 class="veryimportant heading stuff">bijender singh rawat</h1>
+<p class="veryimportant">bijender singh rawat</p>
+<p class="stuff">bijender singh rawat</p>
+<p class="veryimportant stuff">bijender singh rawat</p>
+<p class="stuff veryimportant example dummy">bijender singh rawat</p>
+</body>
+</html>                                                      ( any of the class names having name of any selector will flash the style )
+
+while using a style sheet in CSS , there is an attribute called media
+which is used to set on which type of device or activity that CSS style sheet will work
+this media type attribute was defines in CSS 2.1
+but some of them are supported
+
+all - for all devices
+braille - for tactile braille devices
+embossed - for braille devices
+handheld - for handheld devices
+print - for printed material and documents viewed onscreen in print preview mode
+projections - for projecting medias
+screen - for color computer screens
+speech - for speech synthesizers
+tty - for low resolution teletypes , terminals , or other devices with limited display capabilities
+tv - for use with television type devices
+
+
+
+<audio> tag supports multiple audio format(HTML 5 has B3, wav, ogg support) but the browser will choose the first format which it supports
+If their is any text between audio tag then, it will be displayed in the case if browser do not supports any given tag
+
+their are some attributes of audio tag 
+controls, which display audio players and it's controls 
+autoplay, which autoplay the audio on web page loading
+loop, which loops the audio 
+<if we don't write controls then audio player will not display>
+
+muted, which makes the player muted
+preload, which has 3 values, auto metadata, none
+     in auto, audio preloads itself on opening of web page
+	 in none, audio do not load previously
+	 in metadata , -------------
+	 
+	 
+<track> tag defines the text track for audio and video elements
+the element is used to specify caption, subtitle file or other text containing files
+tracks are formatted in web VTE format or DOT V.T files
+
+<track kind="" src="">
+
+
+<video> tag supports multiple video formats in HTML, MPEG, four webcam, oggy
+
+<video src="" autoplay poster="" autoplay controls muted loop>
