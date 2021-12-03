@@ -1,0 +1,164 @@
+java script is used with HTML
+to change the content of HTML , 
+to change the attribute ,
+to change content of CSS , 
+to hide or show an element
+all these are done at the run time
+java script is written inside the body or head of HTML 
+syntax 
+<body>
+<script>
+</script>
+</body>
+it can also be written externally
+to access a particular element by its ID
+document.getElementById("name of id").innerHTML="new content";
+eg:
+  <body>
+  <p id="myname"></p>
+  <script>
+  document.getElementById("myname").innerHTML="bijender singh rawat";
+  </script>
+  </body>                                                                      // by this code "bijender singh rawat" will print
+  this java script code could be written inside head tag
+but the problem we'll face is that document.getElementById will not get any element's id because it is not there
+so to write this type of JS code in head tag , we have to create a function
+<head>
+<script>
+function display() {
+document.getElementById("myname").innerHTML="bijender singh rawat";
+}
+</script>
+</head>
+how to insert a JS file in HTML document
+<script src="name.js">
+how to take input from user
+document.getElementById("name of id").value;
+
+Array in JScipt
+var car=["a" , "b" , "c" , "d"];
+var car=new Array("a" , "b" , "c" , "d");
+var p={fn:"abc" , ln:"india" , email="bijenderrawat12414@gmail.com"};                      // fn is first name                                                                                            // ln is last name
+to display the elements of this array we write
+document.write(p["fn"]);                                                                   // this will display fn
+document.write(p["ln"]);                                                                   // this will display ln
+document.write(p["email"]);                                                                // this will display email
+
+isNaN is a function in Jscript which is used to check if the input is a number or not
+
+JScript is a case sensitive programming language
+we can use math.pow function in JScript 
+var c = math.pow(2,5);
+or
+we can use 
+var c = 2 ** 5;
+both will work same
+
+validation in JScript
+for eg we have a form
+<form name="myform">
+<input type="text" id="t1">
+<button onclick="myvalid()">click me</button>
+
+if we want to make sure that value must be entered in the input box then inside the function myvalid we will write
+function myvalid() {
+var x = document.getElementById("t1").value;
+if(x == "")
+alert("enter some value");
+else
+alert("thanku for the value");
+}
+
+if we want to make sure that the value entered by the user must be a number then we will write
+function myvalid() {
+var x = document.getElementById("t1").value;
+if(isNaN(x))
+alert("enter numeric value only");
+else
+alert("thanku for the value");
+}
+
+is we want to have a fixed length of input then we will write
+function myvalid() {
+var x = document.getElementById("t1").value;
+if(x.length)
+alert("enter a fixed length");
+else
+alert("thanku for the value");
+}
+
+if we want to have a character value in the input then we can write
+function myvalid() {
+var x = document.getElementById("t1").value;
+var r=/^[A-Za-z]+$/;
+if(x.match(r))
+alert("value ok");
+else 
+alert("value not ok");
+}
+
+different events in JScript
+for eg "onclick" is an event of button
+some other events are 
+onload , onfocus , onsubmit .........
+
+eg this is a function displaying a constant value in alert box
+function dis() {
+const p=3.14;                                       // this is declaring and initializing a constant value 
+alert(p);
+}
+
+what is object in JScript
+in object we can store more than 1 value
+var car={type:"TATA" , model:"A@#" , color:"white"};                // declaring array in JScript
+
+how to access array elements 
+car.element name;
+
+type conversion in JScript
+var x=234;
+var c=x.toString();                                      // converting x to string
+var c=x.toExponential();                                 // converting x to exponential
+var c=x.toFixed();                                       // concerting x to Fixed 
+var c=x.toPrecision();                                   // convertinf x to precision
+
+canvas in JS cript
+canvas is used to create graphics
+canvas is a HTML tag whise coding can be done by JScript
+
+<style>
+canvas {
+border: 2px solid red;
+}
+</style>
+<script>
+function dis() {
+var v = getElementById("mycanvas");
+var con = getContext("2d");                            // variable con is handler of this canvas
+con.fillStyle="red";                                   // which color we want
+con.fillRect(10,10,100,100);                           // creating rectangle inside canvas
+con.fillText("hello",x,y);                             // to write a text at x,y position
+con.globalAlpha= 0-1;                                  // changes the opacity of the shape
+}
+</script>
+<body>
+<canvas id="mycanvas"></canvas><br>
+<button onclick="dis()">click me</button>
+</body>
+
+classs and object in JScript
+class car {
+constructor(argument) {                                 // creating constructor in our class
+this.carname = argument;                                // inside the functions there is no need to create variable 
+}
+getname() {                                            // creating function in our class
+}													   // inside the functions of class there is no need to add function 
+}
+mycar = new car("maruti");                             // creating object of class
+
+windows object 
+there are 4 types of window object
+alert
+confirm
+prompt
+open
