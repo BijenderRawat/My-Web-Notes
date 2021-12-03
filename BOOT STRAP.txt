@@ -1,0 +1,214 @@
+bootstrap is same for every device
+it is a combination of HTML, CSS, JScript
+bootstrap is a framework for all devices
+it's code works same on every device
+for eg 
+for browsers on different device it is very helpful
+bootstrap was first made for mobiles
+it is platform independent
+there are 7 types of button in bootstrap
+this is how we include different buttons in our HTML
+<button type="button" class="btn btn-primary">primary</button><br>
+<button type="button" class="btn btn-info">info</button><br>
+<button type="button" class="btn btn-warning">warning</button><br>
+<button type="button" class="btn btn-danger">danger</button><br>
+<button type="button" class="btn btn-link">link</button><br>
+<button type="button" class="btn btn-success">success</button><br>
+<button type="button" class="btn btn-default">default</button><br>
+
+this is grouping of button
+<div class="btn-group">                                                                 
+<button type="button" class="btn btn-primary active">primary</button>                  
+<button type="button" class="btn btn-info disabled">info</button>                      
+<button type="button" class="btn btn-warning btn-lg">warning</button>              
+<button type="button" class="btn btn-danger btn-md">danger</button>                 
+<button type="button" class="btn btn-link btn-sm">link</button>                      
+<button type="button" class="btn btn-success btn-xs">success</button>                
+<button type="button" class="btn btn-default">default</button>
+</div>
+
+grouping of button vertically
+<div class="btn-group-vertical">                                                           
+<button type="button" class="btn btn-primary active">primary</button>                  
+<button type="button" class="btn btn-info disabled">info</button>                      
+<button type="button" class="btn btn-warning btn-lg">warning</button>              
+<button type="button" class="btn btn-danger btn-md">danger</button>                 
+<button type="button" class="btn btn-link btn-sm">link</button>                      
+<button type="button" class="btn btn-success btn-xs">success</button>                
+<button type="button" class="btn btn-default">default</button>
+</div>
+
+<div class="container">
+username <input type="text" class="form-control">                                          <!-- form-control class changes the input block -->
+password <input type="password" class="form-control"><br>
+<input type="submit" value="login" class="btn btn-warning">
+<input type="submit" value="clear" class="btn btn-warning">
+</div><br>
+Address <textarea rows="2" class="form-control"></textarea>
+<select class="form-control">
+<option>java</option>
+<option>php</option>
+<option>css</option>
+</select>
+<div class="container bg-warning text-center">                                              
+<h2>bijender singh rawat</h2>
+<h2>ashish verma</h2>
+</div>
+<div class="container-fluid bg-warning text-center">                                         <!-- this is a full length container -->                                          
+<h2>bijender singh rawat</h2>
+<h2>ashish verma</h2>
+</div>
+
+to create row and columns in container 
+<div class="container">                                     // container
+<div class="row">                                           // 1st row
+<div class="col">                                           // 1st column
+</div>
+<div class="col">                                           // 2nd column
+</div>
+<div class="col">                                           // 3rd column
+</div>
+</div>
+</div>
+
+to give the colors of the text
+there is a class in bootstrap called text
+<p class="text-warning">-----</p>                                // these classes gives different colors to thr text
+<p class="text-muted">-----</p>
+<p class="text-primary">-----</p>
+<p class="text-success">-----</p>
+<p class="text-info">-----</p>                                   // these text colors can be used in place of background color
+<p class="text-danger">-----</p>                                
+<p class="text-secondary">-----</p>
+<p class="text-dark">-----</p>
+<p class="text-body">-----</p>
+<p class="text-light">-----</p>
+<p class="text-white">-----</p>
+
+heading, mark, kbd in bootstrap
+<p class="display-1">display 1</p>                       // size of p changes with the number of display
+<p class="display-2">display 2</p>
+<p class="display-3">display 3</p>
+<p class="display-4">display 4</p>
+
+this is <mark>mark</mark> tag<br> 
+
+press <kbd>ctrl + p</kbd>to print
+
+WORKING WITH IMAGES IN BOOTSTRAP
+there are many types of classes present in the bootstrap by which we can change the style of the images 
+    rounded
+	rounded-circle
+    img-thumbnail
+	float-right
+	float-left
+	float-center
+	
+JUMBOTRON AND JUMBOTRON-FLUID IN BOOTSTRAP
+jumbotron is used to highlight some content
+if we have some content in our webpage which we want to highlight then we use jumbotron 
+
+width of jumbotron is fixed
+while the width of jumbotron-fluid is flexible
+<div class="jumbotron jumbotron-fluid">
+bijender singh rawat
+</div>
+<div class="jumbotron">
+bijender singh rawat
+</div>
+
+tables in bootstrap
+<table class="table table-bordered table-hover table-striped">  // border of the table is visible 
+                                                                // on hovering the row color will change 
+                                                                // by table-striped alternative rows will be datrk and light  
+<thead>
+<tr>                                                            // row
+<td></td>                                                       // column
+</tr>
+</thead>
+</table>
+
+badges in bootstrap 
+the highlights in webpages are known as badges
+
+<p>this is an example of badge <span class="badge badge-primary">new</span></p>                               
+<p>this is an example of badge <span class="badge badge-secondary">new</span></p>
+<p>this is an example of badge <span class="badge badge-rounded">new</span></p>
+<p>this is an example of badge <span class="badge badge-pill badge-primary">new</span></p>              // badge-pill is used for round badges
+<p>this is an example of badge <span class="badge badge-info">new</span></p>
+<p>this is an example of badge <span class="badge badge-warning">new</span></p>
+<p>this is an example of badge <span class="badge badge-success">new</span></p>
+<p>this is an example of badge <span class="badge badge-dark">new</span></p>
+
+alert boxes in bootstrap
+<div class="container">
+<div class="alert alert-warning alert-dismissible">                                                 // by the use of alert-dismissible alert box can be closed 
+WARNING! WARNING! WARNING!
+<button type="button" class="close" data-close="alert">&times;</button>                             // by data-close this alert box can be closed
+</div>
+</div>
+
+progress bar in bootstrap
+<div class="container">
+<div class="progress">
+<div class="progress-bar" style="width:30%;">
+30%                                                                                       // label on the bar
+</div>
+</div>
+</div>
+
+<div class="container">
+<div class="progress">
+<div class="progress-bar progress-bar-striped" style="width:30%;">                        // this progress bar will be stripped
+30%                                                                                       
+</div>
+</div>
+</div>
+
+Spinner control in bootstrap
+<div class="container">
+<div class="spinner-border text-primary">                             // border spinner
+<div>
+</div>
+
+<div class="spinner-grow text-primary">                               // grow spinner
+</div>
+
+how to adjust a spinner in class
+<div class="container">
+<button type="button" class="btn btn-primary">
+<span class="spinner-border text-warning"></span>
+loading....</button>
+</div>
+</div>
+
+card using bootstrap
+card has three parts
+header 
+body 
+footer
+
+<div class="container">
+<div class="card" style="width: 30px">
+<div class="card-header">header</div>
+<img src="https://th.bing.com/th/id/OIP.V6z_YP_9Uc3yyl9jbpDU8QHaFV?w=260&h=187&c=7&o=5&pid=1.7">
+<div class="card-body">
+<p class="card-title">bijender singh rawat</p>
+<p class="card-text">bijender singh rawat</p>
+<a class="card-link" href="https://www.google.com">card link</a>
+</div>
+<div class="card-footer">footer</div>
+</div>
+</div>
+
+how to display text over image
+<div class="container">
+<div class="card" style="width: 400px;">
+<img src="data:image/jpeg;base64,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" class="card-img-top">
+<div class="card-img-overlay">
+<p class="card-title">card</p>
+<p class="card-text">card text</p>
+<a class="card-link" href="#">link</a>
+</div> 
+</div>
+</div>
